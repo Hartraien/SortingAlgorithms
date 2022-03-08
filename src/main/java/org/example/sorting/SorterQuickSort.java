@@ -24,6 +24,15 @@ public class SorterQuickSort extends SorterAbstract
         sortSubArray( arr, comparator, pivot + 1, lastIndex );
     }
 
+    /**
+     * rearranges subarray so that every element to the left of pivot is smaller than pivot and all elements to the right are not smaller than
+     *
+     * @param arr        - array
+     * @param comparator - comparator to compare elements
+     * @param startIndex - start of subarray
+     * @param lastIndex  - index of last element
+     * @return index of new pivot
+     */
     private int partition( Object[] arr, Comparator<Object> comparator, int startIndex, int lastIndex )
     {
 

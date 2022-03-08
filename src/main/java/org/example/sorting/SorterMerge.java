@@ -17,7 +17,8 @@ public class SorterMerge extends SorterAbstract
 
     /**
      * Sorts left and right subarrays and merges them in result
-     * @param arr - array
+     *
+     * @param arr        - array
      * @param comparator - comparator to compare elements
      * @param startIndex - index of first element of subarray
      * @param upperBound - index of last element of subarray + 1

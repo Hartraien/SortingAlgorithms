@@ -33,10 +33,11 @@ public class SorterHeap extends SorterAbstract
     /**
      * headpifies array: that is for every element with index startIndex it is not smaller than 2*startIndex+1 and 2*startIndex+2 elements
      * recursively heapifes only startIndex's children and only if rearrange was made
-     * @param arr - array to heapify
+     *
+     * @param arr        - array to heapify
      * @param comparator - comparator to compare elements
      * @param startIndex - from which point to start heapifing
-     * @param length - up to which element to heapify
+     * @param length     - up to which element to heapify
      */
     private void heapify( Object[] arr, Comparator<Object> comparator, int startIndex, int length )
     {

@@ -28,9 +28,10 @@ public abstract class SorterAbstract implements Sorter
     /**
      * Sorts list using compartor by converting list to array and sorting array using sortArray() method
      * code taken from openjdk Collections.sort() method
-     * @param list - list to sort
+     *
+     * @param list       - list to sort
      * @param comparator - comparator for list elements
-     * @param <T> - type of elements
+     * @param <T>        - type of elements
      */
     private <T> void sortInner( List<T> list, Comparator<Object> comparator )
     {
@@ -47,7 +48,8 @@ public abstract class SorterAbstract implements Sorter
     /**
      * Sorts array of Objects using comparator
      * Should be implemented in all inheriting classes
-     * @param arr - array to sort
+     *
+     * @param arr        - array to sort
      * @param comparator - comparator from InnerComparator class
      */
     protected abstract void sortArray( Object[] arr, Comparator<Object> comparator );
@@ -64,6 +66,7 @@ public abstract class SorterAbstract implements Sorter
 
         /**
          * Comparator to be used, if null is provided, compareTo() method will be used
+         *
          * @param comparator - comparator for Object or null if compareTo() method will be used
          */
         public InnerComparator( Comparator<Object> comparator )
@@ -75,6 +78,7 @@ public abstract class SorterAbstract implements Sorter
         /**
          * Compares two objects using $comparator if it's not null
          * compareTo() otherwise
+         *
          * @param o1 - first object
          * @param o2 - second object
          * @return negative number of o1 < o2
