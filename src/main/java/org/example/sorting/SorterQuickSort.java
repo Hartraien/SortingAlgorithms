@@ -2,6 +2,9 @@ package org.example.sorting;
 
 import java.util.Comparator;
 
+/**
+ * Sort using quicksort (recursive)
+ */
 public class SorterQuickSort extends SorterAbstract
 {
     @Override

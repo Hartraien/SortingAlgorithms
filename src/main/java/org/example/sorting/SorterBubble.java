@@ -2,6 +2,9 @@ package org.example.sorting;
 
 import java.util.Comparator;
 
+/**
+ * Implements bubble sort
+ */
 public class SorterBubble extends SorterAbstract
 {
 

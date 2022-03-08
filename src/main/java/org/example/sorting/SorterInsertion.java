@@ -2,6 +2,9 @@ package org.example.sorting;
 
 import java.util.Comparator;
 
+/**
+ * Sort using insertion sort
+ */
 public class SorterInsertion extends SorterAbstract
 {
 

@@ -2,6 +2,9 @@ package org.example.sorting;
 
 import java.util.Comparator;
 
+/**
+ * Sort using selection sort
+ */
 public class SorterSelection extends SorterAbstract
 {
     @Override

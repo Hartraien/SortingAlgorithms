@@ -2,6 +2,9 @@ package org.example.sorting;
 
 import java.util.Comparator;
 
+/**
+ * Sort using merge sort (recursive)
+ */
 public class SorterMerge extends SorterAbstract
 {
     @Override
@@ -12,6 +15,13 @@ public class SorterMerge extends SorterAbstract
         sortSubArray( arr, comparator, 0, arr.length );
     }
 
+    /**
+     * Sorts left and right subarrays and merges them in result
+     * @param arr - array
+     * @param comparator - comparator to compare elements
+     * @param startIndex - index of first element of subarray
+     * @param upperBound - index of last element of subarray + 1
+     */
     private void sortSubArray( Object[] arr, Comparator<Object> comparator, int startIndex, int upperBound )
     {
         if ( upperBound - startIndex > 1 )
