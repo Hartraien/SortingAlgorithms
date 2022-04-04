@@ -20,7 +20,7 @@ public abstract class SorterAbstract implements Sorter
     }
 
     @Override
-    public <T> void sort( List<T> list, Comparator<T> comparator )
+    public <T> void sort( List<T> list, Comparator<? super T> comparator )
     {
         sortInner( list, (Comparator<Object>) comparator );
     }

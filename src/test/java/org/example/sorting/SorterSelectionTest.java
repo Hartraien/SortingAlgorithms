@@ -7,6 +7,7 @@ class SorterSelectionTest implements SorterTesterInterface
 {
 
     @Test
+    @Override
     public void testSorter()
     {
         SorterTester tester = new SorterTester();

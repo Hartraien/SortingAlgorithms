@@ -7,6 +7,7 @@ class SorterInsertionTest implements SorterTesterInterface
 {
 
     @Test
+    @Override
     public void testSorter()
     {
         SorterTester tester = new SorterTester();

@@ -26,6 +26,6 @@ public interface Sorter
      * @param comparator - comparator for list elements
      * @param <T>        - type of list elements
      */
-    <T> void sort( List<T> list, Comparator<T> comparator );
+    <T> void sort( List<T> list, Comparator<? super T> comparator );
 
 }

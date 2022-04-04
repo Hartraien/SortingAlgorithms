@@ -8,7 +8,7 @@ import java.util.stream.Collectors;
 
 public class SorterTester
 {
-    private final int listSize = 1000;
+    private final int listSize = 10000;
 
     public void testSorter( Sorter sorter )
     {
@@ -23,7 +23,7 @@ public class SorterTester
         List<String> list = this.generateListString();
         List<String> listCopy = new ArrayList<>( list );
 
-        Comparator<String> comparator = ( a, b ) -> b.compareTo( a );
+        Comparator<String> comparator = Comparator.reverseOrder();
 
         list.sort( comparator );
         sorter.sort( listCopy, comparator );
